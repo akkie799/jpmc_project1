@@ -16,7 +16,7 @@ from sklearn.linear_model import LinearRegression
 # ============================================================
 
 # --- Load and prepare historical price data ---
-df = pd.read_csv('Nat_Gas.csv')
+df = pd.read_csv('../Data/Nat_Gas.csv')
 df['Dates'] = pd.to_datetime(df['Dates'], format='%m/%d/%y')
 df = df.sort_values('Dates').reset_index(drop=True)
 

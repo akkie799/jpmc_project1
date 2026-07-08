@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the data
-df = pd.read_csv('Nat_Gas.csv')
+df = pd.read_csv('../Data/Nat_Gas.csv')
 
 # Convert the Dates column from text to real datetime objects
 df['Dates'] = pd.to_datetime(df['Dates'], format='%m/%d/%y')

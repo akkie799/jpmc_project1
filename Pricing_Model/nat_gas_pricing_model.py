@@ -16,7 +16,7 @@ from sklearn.metrics import r2_score
 
 # Read the raw CSV. At this point 'Dates' is just text (e.g. "10/31/20"),
 # not a real date type yet.
-df = pd.read_csv('Nat_Gas.csv')
+df = pd.read_csv('../Data/Nat_Gas.csv')
 
 # Convert 'Dates' from text into actual datetime objects, using the exact
 # format we know the data is in (month/day/2-digit-year). Being explicit
